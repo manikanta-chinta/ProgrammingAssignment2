@@ -11,7 +11,7 @@ makeCacheMatrix <- function(x = matrix()) {
   }
   ##above code is setting the new matrix values and clearing the cache 
   get <- function() x
-  setInvM <- function(InvM) m <<- InvM
+  setInvM <- function(solve) m <<- solve
   getInvM <- function() m
   ## above code is calculating the inverse of the new matrix and setting the value to setInvM element
   list(set = set, get = get,
